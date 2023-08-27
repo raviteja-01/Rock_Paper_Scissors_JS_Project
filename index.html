@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="bg-container">
+        <div class="top-container">
+            <div class="heading-container">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="score-container">
+                <div class="computer-score">
+                    <h4 class="score-heading">COMPUTER</h4>
+                    <h4 class="score-heading">SCORE</h4>
+                    <h2 class="display-score" id="computerScore">0</h2>
+                </div>
+                <div class="your-score">
+                    <h4 class="score-heading">YOUR</h4>
+                    <h4 class="score-heading">SCORE</h4>
+                    <h2 class="display-score" id="userScore">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container"> 
+            <div class="icon-container fist-container" id="fistContainer">
+                <img src="./assets/icons/fistIcon.svg" alt="fist-icon">
+            </div>
+            <div class="icon-container finger-container" id="fingerContainer">
+                <img src="./assets/icons/fingerIcon.svg" alt="finger-icon">
+            </div>
+        </div>
+        <div class="icon-container hand-container" id="handContainer">
+            <img src="./assets/icons/handIcon.svg" alt="hand-icon">
+        </div>
+        <div class="button-container">
+            <button class="rules-button">RULES</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
