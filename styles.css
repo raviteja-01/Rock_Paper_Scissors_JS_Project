@@ -8,8 +8,8 @@
 
 .bg-container {
     background-color: #8CC461;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -95,7 +95,7 @@
 .button-container{
     display:flex;
     justify-content: flex-end;
-    width:inherit;
+    width:100vw;
     gap:20px;
     padding:15px;
 
@@ -201,6 +201,63 @@
     top:70%;
     left:50%;
     transform: translate(-50%, -50%);
+}
+.modal{
+    display:flex;
+    justify-content:flex-end;
+    width:100vw;
+    align-items:start;
+    margin-right:20px;
+    position: relative;
+}
+.modal-heading{
+    text-align: center;
+    color:#FFFFFF;
+    font-family: "Roboto";
+    font-weight:700;
+    font-size:22px;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+}
+.modal-content{
+    background-color: #004429;
+    border: 5px solid #FFFFFF;
+    min-width: 310px;
+    min-height: 350px;
+    max-width: 400px;
+    max-height: 450px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.game-rules-list{
+    list-style-type: square;
+    padding:10px;
+}
+li::marker{
+    color:#FFD600;
+    font-size:1.4em;
+}
+.game-rules-list li{
+    color:#FFFFFF;
+    font-size:18px;
+    font-family:"Roboto";
+    line-height:27px;
+    font-weight:300;
+}
+.cross-btn{
+    background-color:#FF0000;
+    color:#FFFFFF;
+    font-family: "Roboto";
+    font-weight:700;
+    width:60px;
+    height:60px;
+    border-radius:100px;
+    font-size:40px;
+    border: 5px solid #ffffff;
+    position:absolute;
+    bottom:363px;
+    
 }
 
       

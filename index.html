@@ -44,9 +44,6 @@
             <div class="result">
                 <div class="user-selected-option" id="userSelectedOption">
                     <h5 class="selected-option-heading">YOU PICKED</h5>
-                    <!-- <div class="icon-container fist-container" id="fistContainer">
-                        <img src="./assets/icons/fistIcon.svg" alt="fist-icon">
-                    </div> -->
                 </div>
                 <div class="result-msg">
                     <div>
@@ -57,19 +54,21 @@
                 </div>
                 <div class="computer-selected-option" id="computerSelectedOption">
                     <h5 class="selected-option-heading">PC PICKED</h5>
-                    <!-- <div class="icon-container fist-container" id="fistContainer">
-                        <img src="./assets/icons/fistIcon.svg" alt="fist-icon">
-                    </div> -->
                 </div>
         </div>
         </div>
-        <div class="modal toggle-none button-container" id="modalContainer">
-            <button class="modal-close-btn" id="modalCloseBtn">X</button>
-            <div class="modal-content">
-                <h5>GAME RULES</h5>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, blanditiis.</li>
-                </ul>
+        <div class="toggle-none" id="modalContainer">
+            <div class="modal">
+                <div class="modal-content">
+                    <h4 class="modal-heading">GAME RULES</h4>
+                    <ul class="game-rules-list">
+                        <li>Rock beats scissors, scissors beat paper and paper beat rock.</li>
+                        <li>Agree ahead of time whether you'll countoff "rock,paper,scissors,shoot" or just "rock,paper,scissors".</li>
+                        <li>Use rock,paper,scissors to take minor decisions or play just time pass.</li>
+                        <li>If both players lay down the same hand, each player lays down another hand.</li>
+                    </ul>
+                </div>
+                <button class="cross-btn" id="crossBtn">X</button>
             </div>
         </div>
         <div class="button-container">

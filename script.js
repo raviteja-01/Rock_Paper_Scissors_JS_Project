@@ -15,16 +15,16 @@ const fistIcon = document.getElementById("fistIcon");
 const nextBtn = document.getElementById("nextBtn");
 const rulesBtn = document.getElementById("rulesBtn");
 const modalContainer = document.getElementById("modalContainer");
+const crossBtn = document.getElementById("crossBtn");
+const rulesBtnWinnerPage = document.getElementById("rulesBtnWinnerPage");
+const modalContainerWinnerPage = document.getElementById("modalContainerWinnerPage");
+const crossBtnWinnerPage = document.getElementById("crossBtnWinnerPage");
 const userDivElement = document.createElement("div");
 const compDivElement = document.createElement("div");
 let userImgElement;
 let compImgElement;
 
-
-// const playAgainBtnWinnerPage = document.getElementById("playAgainBtnWinnerPage");
-// console.log(playAgainBtnWinnerPage);
-
-
+const playAgainBtnWinnerPage = document.getElementById("playAgainBtnWinnerPage");
 
 const computerOptions = ["ROCK","PAPER","SCISSORS"];
 
@@ -203,56 +203,93 @@ const gameResult = (userOption) =>{
 
 }
 
-fistContainer.onclick = () =>{
+if (fistContainer){
+    fistContainer.onclick = () =>{
     console.log("ROCK selected.")
     gameResult("ROCK");
 }
-
-handContainer.onclick = () =>{
+}
+if (handContainer){
+    handContainer.onclick = () =>{
     console.log("PAPER SELECTED");
     gameResult("PAPER");
 }
+}
 
-fingerContainer.onclick = () =>{
+if (fingerContainer){
+    fingerContainer.onclick = () =>{
     console.log("SCISSORS SELECTED");
     gameResult("SCISSORS");
 }
-
-playAgainBtn.onclick = () =>{
-    resultContainer.classList.add("toggle-none");
-    resultContainer.classList.remove("toggle-display");
-    bottomBackgroundContainer.classList.remove("toggle-none");
-    if (!nextBtn.classList.contains("toggle-none")){
-        nextBtn.classList.add("toggle-none");
-    }
-    if (!resultMessagePara.innerText){
-        resultMessagePara.innerText = "AGAINST PC";
-    }
-    if (playAgainBtn.innerText === "REPLAY"){
-        playAgainBtn.innerText = "PLAY AGAIN";
-    }
-    console.log(bottomContainer);
-    userDivElement.removeChild(userImgElement);
-    compDivElement.removeChild(compImgElement);
-    userDivElement.classList = [];
-    compDivElement.classList=[];
-    userSelectedOption.removeChild(userDivElement);
-    computerSelectedOption.removeChild(compDivElement);
 }
 
-nextBtn.onclick = () =>{
-    window.location.href="winnerPage.html";
+if (playAgainBtn){
+    playAgainBtn.onclick = () =>{
+        resultContainer.classList.add("toggle-none");
+        resultContainer.classList.remove("toggle-display");
+        bottomBackgroundContainer.classList.remove("toggle-none");
+        if (!nextBtn.classList.contains("toggle-none")){
+            nextBtn.classList.add("toggle-none");
+        }
+        if (!resultMessagePara.innerText){
+            resultMessagePara.innerText = "AGAINST PC";
+        }
+        if (playAgainBtn.innerText === "REPLAY"){
+            playAgainBtn.innerText = "PLAY AGAIN";
+        }
+        console.log(bottomContainer);
+        userDivElement.removeChild(userImgElement);
+        compDivElement.removeChild(compImgElement);
+        userDivElement.classList = [];
+        compDivElement.classList=[];
+        userSelectedOption.removeChild(userDivElement);
+        computerSelectedOption.removeChild(compDivElement);
+    }
 }
 
-rulesBtn.onclick = () =>{
-    console.log("rules btn clicked")
-    modalContainer.classList.remove("toggle-none");
+if (nextBtn){
+    nextBtn.onclick = () =>{
+        window.location.href="winnerPage.html";
+    }
 }
 
-// playAgainBtnWinnerPage.onclick = () =>{
-//     console.log("clicked....");
-//     window.location.href="index.html";
-// }
+if (rulesBtn){
+    rulesBtn.onclick = () =>{
+        console.log("rules btn clicked")
+        modalContainer.classList.remove("toggle-none");
+    }
+}
+
+if (rulesBtnWinnerPage){
+    rulesBtnWinnerPage.onclick = () =>{
+        console.log("rules btn clicked")
+        modalContainerWinnerPage.classList.remove("toggle-none");
+    }
+}
+
+if (playAgainBtnWinnerPage){
+    playAgainBtnWinnerPage.onclick = () =>{
+        console.log("clicked....");
+        window.location.href="index.html";
+    }
+}
+
+if (crossBtn){
+    crossBtn.onclick = () =>{
+        modalContainer.classList.add("toggle-none");
+    }
+}
+
+if (crossBtnWinnerPage){
+    crossBtnWinnerPage.onclick = () =>{
+        modalContainerWinnerPage.classList.add("toggle-none");
+    }
+}
+
+
+
+
+
 
 
 getScoresFromLocalStorage();
