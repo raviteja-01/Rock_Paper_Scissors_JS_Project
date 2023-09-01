@@ -27,19 +27,54 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-container"> 
-            <div class="icon-container fist-container" id="fistContainer">
-                <img src="./assets/icons/fistIcon.svg" alt="fist-icon">
+        <div class="bottom-bg-container" id="bottomBackgroundContainer">
+            <div class="bottom-container" id="bottomContainer">
+                <div class="icon-container fist-container" id="fistContainer">
+                    <img src="./assets/icons/fistIcon.svg" alt="fist-icon" id="fistIcon">
+                </div>
+                <div class="icon-container finger-container" id="fingerContainer">
+                    <img src="./assets/icons/fingerIcon.svg" alt="finger-icon" id="fingerIcon">
+                </div>
             </div>
-            <div class="icon-container finger-container" id="fingerContainer">
-                <img src="./assets/icons/fingerIcon.svg" alt="finger-icon">
+            <div class="icon-container hand-container" id="handContainer">
+                <img src="./assets/icons/handIcon.svg" alt="hand-icon" id="handIcon">
             </div>
         </div>
-        <div class="icon-container hand-container" id="handContainer">
-            <img src="./assets/icons/handIcon.svg" alt="hand-icon">
+        <div class="toggle-none" id="resultContainer">
+            <div class="result">
+                <div class="user-selected-option" id="userSelectedOption">
+                    <h5 class="selected-option-heading">YOU PICKED</h5>
+                    <!-- <div class="icon-container fist-container" id="fistContainer">
+                        <img src="./assets/icons/fistIcon.svg" alt="fist-icon">
+                    </div> -->
+                </div>
+                <div class="result-msg">
+                    <div>
+                        <h4 class="result-msg-heading" id="resultMessageHeading">YOU WIN </h4>
+                        <p class="result-msg-paragrpah" id="resultMessagePara">AGAINST PC</p>
+                    </div>
+                    <button class="play-again-btn" id="playAgainBtn">PLAY AGAIN</button>
+                </div>
+                <div class="computer-selected-option" id="computerSelectedOption">
+                    <h5 class="selected-option-heading">PC PICKED</h5>
+                    <!-- <div class="icon-container fist-container" id="fistContainer">
+                        <img src="./assets/icons/fistIcon.svg" alt="fist-icon">
+                    </div> -->
+                </div>
+        </div>
+        </div>
+        <div class="modal toggle-none button-container" id="modalContainer">
+            <button class="modal-close-btn" id="modalCloseBtn">X</button>
+            <div class="modal-content">
+                <h5>GAME RULES</h5>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, blanditiis.</li>
+                </ul>
+            </div>
         </div>
         <div class="button-container">
-            <button class="rules-button">RULES</button>
+            <button class="rules-button" id="rulesBtn">RULES</button>
+            <button class="rules-button toggle-none" id="nextBtn">NEXT</button>
         </div>
     </div>
     <script src="./script.js"></script>

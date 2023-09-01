@@ -12,7 +12,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .top-container{
@@ -24,7 +24,7 @@
     justify-content:space-between;
 }
 .heading-container h1{
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 30px;
     font-weight: 600;
     line-height: 47px;
@@ -45,7 +45,7 @@
     padding:5px;
 }
 .score-heading{
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 17px;
     font-weight: 600;
     line-height: 20px;
@@ -54,7 +54,7 @@
     color: #656565;
 }
 .display-score{
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 68px;
     font-weight: 700;
     line-height: 80px;
@@ -72,6 +72,11 @@
     border-radius:80px;
     
 }
+.bottom-bg-container {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
 .fist-container{
     border: 16px solid #0074B6;
 }
@@ -80,17 +85,19 @@
 }
 .hand-container{
     border: 16px solid #FFA943;
+    align-self:center;
 }
 .bottom-container{
     display:flex;
-    width:40vw;
+    width:48vw;
     justify-content:space-around;
 }
 .button-container{
     display:flex;
     justify-content: flex-end;
     width:inherit;
-    margin-right:20px;
+    gap:20px;
+    padding:15px;
 
 }
 .rules-button{
@@ -106,3 +113,94 @@
     height: 40px;
     border-radius: 8px;
 }
+.result-conatiner{
+    display:none;
+
+}
+.result{
+    display:flex;
+    justify-content:space-evenly;
+    width:48vw;
+    align-items:center;
+}
+.user-selected-option,
+.computer-selected-option,.result-msg{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+.selected-option-heading{
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color:#FFFFFF;
+}
+.play-again-btn{
+    width: 174px;
+    height: 44px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    border:none;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color:#6B6B6B;
+}
+.result-msg-heading{
+    font-family: "Roboto";
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    color:#FFFFFF;
+}
+.result-msg-paragrpah{
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color:#FFFFFF;
+}
+.toggle-none{
+    display:none;
+}
+.toggle-display{
+    display:block;
+}
+.winner-page-heading{
+    font-family: "Roboto";
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 107px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color:#FFFFFF;
+}
+.winner-page-para{
+    font-family: "Roboto";
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.image-container{
+    position:relative;
+}
+.cup-container{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+      
